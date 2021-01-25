@@ -1,0 +1,7 @@
+node_modules/
+dist/
+coverage/
+static/covers/
+src/config.ts
+sessions.db
+tsconfig.tsbuildinfo

@@ -1,0 +1,27 @@
+.fade-in-enter-active {
+  opacity: 0;
+}
+
+.fade-in-enter-to,
+.fade-in-leave-active {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.fade-in-leave-to {
+  opacity: 0;
+}
+
+.list-item {
+  transition: all 0.3s;
+}
+
+.list-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.list-leave-active {
+  display: none;
+}

@@ -1,0 +1,185 @@
+.todo,
+.budget {
+  .subtitle {
+    display: block;
+    color: var(--color-dark-red);
+    text-align: center;
+    font-size: 30px;
+    margin: 0.2em 10px 0.6em 10px;
+  }
+
+  .responsive {
+    padding: 10px;
+    float: left;
+    width: 33.33333%;
+    margin-bottom: 20px;
+
+    @media only screen and (max-width: 1222px) {
+      width: 100%;
+    }
+
+    &__createtodo {
+      @media only screen and (min-width: 1222px) {
+        display: flex;
+
+        input {
+          flex: 1;
+        }
+      }
+
+      @media (max-width: 460px) {
+        .responsive__input {
+          padding: 20px 10px;
+          font-size: 0.95em;
+        }
+      }
+    }
+
+    &__ul {
+      list-style-type: none;
+
+      &--li {
+        padding: 20px;
+        font-size: 1.4em;
+        background-color: var(--color-light-grey);
+        border-left: 5px solid var(--color-dark);
+        margin-bottom: 2px;
+        color: black;
+        border-radius: 15px;
+        float: left;
+        width: 100%;
+      }
+    }
+
+    &__input {
+      width: 100%;
+      border: 0;
+      padding: 20px;
+      margin-bottom: 5px;
+      font-size: 1.4em;
+      background-color: var(--color-dark-grey);
+      color: black;
+      border-radius: 15px;
+      border-left: 5px solid var(--color-homepage-grey);
+    }
+
+    &__btn {
+      width: 100%;
+      border: none;
+      padding: 20px;
+      margin-bottom: 8px;
+      font-size: 1.4em;
+      background-color: var(--color-homepage-grey);
+      color: #fff;
+      border-radius: 15px;
+      outline: none;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      margin-left: 5px;
+      margin-right: 5px;
+
+      &:hover {
+        background-color: var(--accent-color);
+      }
+    }
+  }
+
+  .tooltip {
+    position: relative;
+
+    &::after {
+      content: attr(data-tooltip);
+      font-size: 14px;
+      text-align: center;
+      position: absolute;
+      background: var(--header-hover-bg-color);
+      padding: 4px 12px;
+      width: -webkit-max-content;
+      width: -moz-max-content;
+      width: max-content;
+      display: table;
+      opacity: 0;
+      pointer-events: none;
+      left: 50%;
+      top: 5px;
+      border-radius: 4px;
+      transform: translate3d(-50%, 0%, 0);
+      transition: all 0.3s ease;
+      transition-delay: 0.5s;
+      z-index: -1;
+    }
+
+    &:hover {
+      &::after {
+        opacity: 1;
+        transform: translate3d(-50%, calc(-100% - 2px), 0);
+      }
+    }
+  }
+
+  &-controls {
+    float: right;
+
+    &--icon {
+      cursor: pointer;
+      padding: 5px 3px 0 3px;
+      transition: all 0.2s ease;
+
+      &:hover {
+        color: var(--accent-color);
+      }
+    }
+  }
+
+  .priority {
+    &--0 {
+      border-left-color: var(--color-priority-normal) !important;
+    }
+
+    &--1 {
+      border-left-color: var(--color-priority-medium) !important;
+    }
+
+    &--2 {
+      border-left-color: var(--color-priority-important) !important;
+    }
+  }
+}
+
+.budget {
+  .responsive {
+    width: 50%;
+
+    @media only screen and (max-width: 1222px) {
+      width: 100%;
+    }
+
+    &__createtbudget {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &-item {
+    display: flex;
+    word-wrap: break-word;
+
+    &__name {
+      flex: 1 1 55%;
+      padding: 0 0.2rem;
+      word-wrap: break-word;
+      max-width: 50%;
+    }
+
+    &__price {
+      flex: 1 1 20%;
+      padding: 0 0.2rem;
+      min-width: 20%;
+    }
+
+    &__controls {
+      flex: 1 1 25%;
+      padding: 0 0.2rem;
+    }
+  }
+}

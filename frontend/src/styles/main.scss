@@ -1,0 +1,86 @@
+:root {
+  --bg-color: #f5eee6;
+  --secondary-bg-color: #f7ece0;
+  --header-bg-color: #fff5e9;
+  --header-hover-bg-color: #d8d8d8;
+  --text-color: #000;
+  --secondary-text-color: #2c3e50;
+  --accent-color: #a64452;
+  --accent-color-opacity: #a6445250;
+  --accent-color2: #a64452;
+  --event-bg-color: #d8d8d8;
+  --log-bg-color: #fff;
+  --text-color-red: #a34956;
+  --text-color-gray: #c7c7c7;
+  --import-color-opacity: #fafafa80;
+  --homepage-color-opacity: linear-gradient(to right, #a7421a, #ff4800); //rgba(255, 72, 0, 0.788);
+  --tile-color: #f5eee6;
+  --tile-hover: #f7fdf8;
+  --tiles-bg: #bdb3ae;
+  --main-color: #a64452;
+  --main-color-hover: #e61f11;
+  --homepage-text-color: #4b4646;
+  --homepage-text-hover: #2b2a2a;
+  --homepage-logo-opacity: rgba(245, 237, 237, 0.75);
+
+  /* profile colors */
+  --profile-top-color: #c2c2c2;
+  --profile-bot-color: #e0e0e0;
+  --profile-top-text: #160600;
+  --profile-text-hover: #a64452;
+
+  /* colors - no change with theme */
+  --color-bg: #f5eee6;
+  --color-red: #df1000;
+  --color-selago: #f7f7fe;
+  --color-light-blue: #ccd9de;
+  --color-dark: #001931;
+  --color-dark-red: #a64452;
+  --color-light-grey: #e0e0e0;
+  --color-dark-grey-focus: #d1d0d0;
+  --color-dark-grey: #c2c2c2;
+  --color-logo: #8596ae;
+  --color-homepage-grey: #686668;
+  --color-priority-important: var(--color-dark-red);
+  --color-priority-medium: #ffa500;
+  --color-priority-normal: var(--color-homepage-grey);
+}
+
+[theme="dark"] {
+  --bg-color: #222930;
+  --secondary-bg-color: #151c26;
+  --header-bg-color: #151c26;
+  --header-hover-bg-color: #1d252f;
+  --text-color: #fff;
+  --secondary-text-color: #8596ae;
+  --accent-color: #a64452;
+  --accent-color-opacity: #a6445250;
+  --event-bg-color: #404753;
+  --log-bg-color: #404753;
+  --text-color-red: #5a2028;
+  --import-color-opacity: rgba(64, 71, 83, 0.5);
+  --homepage-color-opacity: linear-gradient(to right, #55615f, #8596ae);//rgba(133, 150, 174, 0.788);//rgba(44, 191, 164, 0.788);
+  --tile-color: #222930;
+  --tile-hover: #222b40;
+  --tiles-bg: #161b20;
+  --main-color: #8596ae;//rgb(42, 177, 152);
+  --main-color-hover: #74859d;//rgb(49, 192, 166);
+  --homepage-text-color: #b3b3b3;
+  --homepage-text-hover: #e2dcdc;
+  --homepage-logo-opacity: rgba(2, 1, 3, 0.55);
+
+  /* profile colors */
+  --profile-top-color: #4a525e;
+  --profile-bot-color: #686668;
+  --profile-top-text: #d4d4d4;
+  --profile-text-hover: #a64452;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Kalam&display=swap&subset=latin-ext");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css");
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap');
+@import "./animations.scss";
+@import "./style.scss";
+@import "./log.scss";
+@import "./todo-budget.scss";
